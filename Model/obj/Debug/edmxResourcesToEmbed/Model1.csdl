@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="practicaMeDModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="UserProfile">
+    <Key>
+      <PropertyRef Name="usrId" />
+    </Key>
+    <Property Name="usrId" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="loginName" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="enPassword" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="firstName" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="lastName" Type="String" MaxLength="40" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="email" Type="String" MaxLength="60" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="language" Type="String" MaxLength="2" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="country" Type="String" MaxLength="2" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="Imagen" Relationship="practicaMeDModel.ImagenUserProfile" FromRole="UserProfile" ToRole="Imagen" />
+  </EntityType>
+  <EntityContainer Name="practicaMeDEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="UserProfile" EntityType="Self.UserProfile" />
+    <EntitySet Name="ImagenSet" EntityType="practicaMeDModel.Imagen" />
+    <AssociationSet Name="ImagenUserProfile" Association="practicaMeDModel.ImagenUserProfile">
+      <End Role="Imagen" EntitySet="ImagenSet" />
+      <End Role="UserProfile" EntitySet="UserProfile" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Imagen">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Titulo" Type="String" Nullable="false" />
+    <Property Name="Descripcion" Type="String" Nullable="false" />
+    <Property Name="FechaDeSubida" Type="String" Nullable="false" />
+    <Property Name="Apertura" Type="String" Nullable="false" />
+    <Property Name="TExposicion" Type="String" Nullable="false" />
+    <Property Name="ISO" Type="String" Nullable="false" />
+    <Property Name="WB" Type="String" Nullable="false" />
+    <Property Name="Categoria" Type="String" Nullable="false" />
+    <NavigationProperty Name="UserProfile" Relationship="practicaMeDModel.ImagenUserProfile" FromRole="Imagen" ToRole="UserProfile" />
+    <Property Name="usrId" Type="Int64" Nullable="false" />
+  </EntityType>
+  <Association Name="ImagenUserProfile">
+    <End Type="practicaMeDModel.Imagen" Role="Imagen" Multiplicity="*" />
+    <End Type="practicaMeDModel.UserProfile" Role="UserProfile" Multiplicity="1" />
+    <ReferentialConstraint>
+      <Principal Role="UserProfile">
+        <PropertyRef Name="usrId" />
+      </Principal>
+      <Dependent Role="Imagen">
+        <PropertyRef Name="usrId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

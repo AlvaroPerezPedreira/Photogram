@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<module name="nInjectConfiguration">
+
+	<bind service="Es.Udc.DotNet.PracticaMaD.Model.UserProfileDao.IUserProfileDao, PracticaMaD"
+		  to="Es.Udc.DotNet.PracticaMaD.Model.UserProfileDao.UserProfileDaoEntityFramework, PracticaMaD" />
+
+	<bind
+		service="Es.Udc.DotNet.PracticaMaD.Model.UserService.IUserService, PracticaMaD"
+		to="Es.Udc.DotNet.PracticaMaD.Model.UserService.UserService, PracticaMaD" />
+
+
+	<bind service="Es.Udc.DotNet.PracticaMaD.Model.ImageDao.IImageDao, PracticaMaD"
+	  to="Es.Udc.DotNet.PracticaMaD.Model.ImageDao.IImageDaoEntityFramework, PracticaMaD" />
+
+	<bind
+		service="Es.Udc.DotNet.PracticaMaD.Model.ImageService.IImageService, PracticaMaD"
+		to="Es.Udc.DotNet.PracticaMaD.Model.ImageService.ImageService, PracticaMaD" />
+
+
+	<bind service="Es.Udc.DotNet.PracticaMaD.Model.ComentarioDao.IComentarioDao, PracticaMaD"
+		to="Es.Udc.DotNet.PracticaMaD.Model.ComentarioDao.ComentarioDaoEntityFramework, PracticaMaD" />
+
+	<bind service="Es.Udc.DotNet.PracticaMaD.Model.TagDao.ITagDao, PracticaMaD"
+		to="Es.Udc.DotNet.PracticaMaD.Model.TagDao.TagDaoEntityFramework, PracticaMaD" />
+	
+	<bind
+	  service="System.Data.Entity.DbConnection, EntityFramework"
+	  to="System.Data.Entity.DbConnection, EntityFramework" />
+
+
+	<bind
+		service="System.Data.Entity.DbContext, EntityFramework"
+		to="System.Data.Entity.DbContext, EntityFramework"
+		scope="singleton">
+		<metadata key="nameOrConnectionString" value="metadata=res://*/PracticaMaD.csdl|res://*/PracticaMaD.ssdl|res://*/PracticaMaD.msl;provider=System.Data.SqlClient;provider connection string=&quot;Data Source=localhost;Initial Catalog=PracticaMaD_test;Integrated Security=True;MultipleActiveResultSets=True&quot;" providerName="System.Data.EntityClient"    />
+	</bind>
+
+</module>
+

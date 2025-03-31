@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="EsUDCDotNetPracticaMaDStoreContainer" CdmEntityContainer="PracticaMaDEntities">
+    <EntitySetMapping Name="ImagenSet">
+      <EntityTypeMapping TypeName="IsTypeOf(Es.UDC.DotNet.PracticaMaD.ImageSet)">
+        <MappingFragment StoreEntitySet="ImagenSet">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Titulo" ColumnName="Titulo" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+          <ScalarProperty Name="FechaDeSubida" ColumnName="FechaDeSubida" />
+          <ScalarProperty Name="usrId" ColumnName="usrId" />
+          <ScalarProperty Name="Data" ColumnName="Data" />
+          <ScalarProperty Name="CategoríaId" ColumnName="CategoríaId" />
+          <ScalarProperty Name="EXIFId" ColumnName="EXIFId" />
+          <ScalarProperty Name="numLikes" ColumnName="numLikes" />
+          <ScalarProperty Name="author" ColumnName="author" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserProfile">
+      <EntityTypeMapping TypeName="IsTypeOf(Es.UDC.DotNet.PracticaMaD.UserProfile)">
+        <MappingFragment StoreEntitySet="UserProfile">
+          <ScalarProperty Name="usrId" ColumnName="usrId" />
+          <ScalarProperty Name="loginName" ColumnName="loginName" />
+          <ScalarProperty Name="enPassword" ColumnName="enPassword" />
+          <ScalarProperty Name="firstName" ColumnName="firstName" />
+          <ScalarProperty Name="lastName" ColumnName="lastName" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="language" ColumnName="language" />
+          <ScalarProperty Name="country" ColumnName="country" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CategorySet">
+      <EntityTypeMapping TypeName="IsTypeOf(Es.UDC.DotNet.PracticaMaD.Category)">
+        <MappingFragment StoreEntitySet="CategorySet">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CommentSet">
+      <EntityTypeMapping TypeName="IsTypeOf(Es.UDC.DotNet.PracticaMaD.Comment)">
+        <MappingFragment StoreEntitySet="CommentSet">
+          <ScalarProperty Name="comentarioId" ColumnName="comentarioId" />
+          <ScalarProperty Name="ImagenSetId" ColumnName="ImagenSetId" />
+          <ScalarProperty Name="UserProfile_usrId" ColumnName="UserProfile_usrId" />
+          <ScalarProperty Name="Texto" ColumnName="Texto" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="author" ColumnName="author" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EXIFSet">
+      <EntityTypeMapping TypeName="IsTypeOf(Es.UDC.DotNet.PracticaMaD.EXIF)">
+        <MappingFragment StoreEntitySet="EXIFSet">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Apertura" ColumnName="Apertura" />
+          <ScalarProperty Name="TExposicion" ColumnName="TExposicion" />
+          <ScalarProperty Name="ISO" ColumnName="ISO" />
+          <ScalarProperty Name="WB" ColumnName="WB" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TagSet">
+      <EntityTypeMapping TypeName="IsTypeOf(Es.UDC.DotNet.PracticaMaD.Tag)">
+        <MappingFragment StoreEntitySet="TagSet">
+          <ScalarProperty Name="TagId" ColumnName="TagId" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="usedTimes" ColumnName="usedTimes" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="UserProfileUserProfile" TypeName="Es.UDC.DotNet.PracticaMaD.UserProfileUserProfile" StoreEntitySet="UserProfileUserProfile">
+      <EndProperty Name="UserProfile">
+        <ScalarProperty Name="usrId" ColumnName="Seguido_usrId" />
+      </EndProperty>
+      <EndProperty Name="UserProfile1">
+        <ScalarProperty Name="usrId" ColumnName="Seguidor_usrId" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="TagImageSet" TypeName="Es.UDC.DotNet.PracticaMaD.TagImageSet" StoreEntitySet="TagImageSet">
+      <EndProperty Name="Tag">
+        <ScalarProperty Name="TagId" ColumnName="Tag_TagId" />
+      </EndProperty>
+      <EndProperty Name="ImageSet">
+        <ScalarProperty Name="Id" ColumnName="ImageSet_Id" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="UserProfileImageSet" TypeName="Es.UDC.DotNet.PracticaMaD.UserProfileImageSet" StoreEntitySet="UserProfileImageSet">
+      <EndProperty Name="UserProfile">
+        <ScalarProperty Name="usrId" ColumnName="UserProfile1_usrId" />
+      </EndProperty>
+      <EndProperty Name="ImageSet">
+        <ScalarProperty Name="Id" ColumnName="ImageSet_Id" />
+      </EndProperty>
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,606 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="Es.UDC.DotNet.PracticaMaD.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2012" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="EsUDCDotNetPracticaMaDStoreContainer">
+    <EntitySet Name="ImagenSet" EntityType="Es.UDC.DotNet.PracticaMaD.Store.ImagenSet" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="UserProfile" EntityType="Es.UDC.DotNet.PracticaMaD.Store.UserProfile" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="CategorySet" EntityType="Es.UDC.DotNet.PracticaMaD.Store.CategorySet" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="CommentSet" EntityType="Es.UDC.DotNet.PracticaMaD.Store.CommentSet" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="EXIFSet" EntityType="Es.UDC.DotNet.PracticaMaD.Store.EXIFSet" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="TagSet" EntityType="Es.UDC.DotNet.PracticaMaD.Store.TagSet" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="UserProfileUserProfile" EntityType="Es.UDC.DotNet.PracticaMaD.Store.UserProfileUserProfile" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="TagImageSet" EntityType="Es.UDC.DotNet.PracticaMaD.Store.TagImageSet" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="UserProfileImageSet" EntityType="Es.UDC.DotNet.PracticaMaD.Store.UserProfileImageSet" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FK_ImagenUserProfile" Association="Es.UDC.DotNet.PracticaMaD.Store.FK_ImagenUserProfile">
+      <End Role="UserProfile" EntitySet="UserProfile" />
+      <End Role="ImagenSet" EntitySet="ImagenSet" />
+    </AssociationSet>
+    <AssociationSet Name="CategoríaImagenSet" Association="Es.UDC.DotNet.PracticaMaD.Store.CategoríaImagenSet">
+      <End Role="Categoría" EntitySet="CategorySet" />
+      <End Role="ImagenSet" EntitySet="ImagenSet" />
+    </AssociationSet>
+    <AssociationSet Name="ComentarioImagenSet" Association="Es.UDC.DotNet.PracticaMaD.Store.ComentarioImagenSet">
+      <End Role="Comentario" EntitySet="CommentSet" />
+      <End Role="ImagenSet" EntitySet="ImagenSet" />
+    </AssociationSet>
+    <AssociationSet Name="ComentarioUserProfile" Association="Es.UDC.DotNet.PracticaMaD.Store.ComentarioUserProfile">
+      <End Role="Comentario" EntitySet="CommentSet" />
+      <End Role="UserProfile" EntitySet="UserProfile" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserProfileUserProfile_UserProfile" Association="Es.UDC.DotNet.PracticaMaD.Store.FK_UserProfileUserProfile_UserProfile">
+      <End Role="UserProfile" EntitySet="UserProfile" />
+      <End Role="UserProfileUserProfile" EntitySet="UserProfileUserProfile" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserProfileUserProfile_UserProfile1" Association="Es.UDC.DotNet.PracticaMaD.Store.FK_UserProfileUserProfile_UserProfile1">
+      <End Role="UserProfile1" EntitySet="UserProfile" />
+      <End Role="UserProfileUserProfile" EntitySet="UserProfileUserProfile" />
+    </AssociationSet>
+    <AssociationSet Name="EXIFImageSet" Association="Es.UDC.DotNet.PracticaMaD.Store.EXIFImageSet">
+      <End Role="EXIF" EntitySet="EXIFSet" />
+      <End Role="ImageSet" EntitySet="ImagenSet" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TagImageSet_Tag" Association="Es.UDC.DotNet.PracticaMaD.Store.FK_TagImageSet_Tag">
+      <End Role="Tag" EntitySet="TagSet" />
+      <End Role="TagImageSet" EntitySet="TagImageSet" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TagImageSet_ImageSet" Association="Es.UDC.DotNet.PracticaMaD.Store.FK_TagImageSet_ImageSet">
+      <End Role="ImageSet" EntitySet="ImagenSet" />
+      <End Role="TagImageSet" EntitySet="TagImageSet" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserProfileImageSet_UserProfile" Association="Es.UDC.DotNet.PracticaMaD.Store.FK_UserProfileImageSet_UserProfile">
+      <End Role="UserProfile" EntitySet="UserProfile" />
+      <End Role="UserProfileImageSet" EntitySet="UserProfileImageSet" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserProfileImageSet_ImageSet" Association="Es.UDC.DotNet.PracticaMaD.Store.FK_UserProfileImageSet_ImageSet">
+      <End Role="ImageSet" EntitySet="ImagenSet" />
+      <End Role="UserProfileImageSet" EntitySet="UserProfileImageSet" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="ImagenSet">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Titulo" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Descripcion" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="FechaDeSubida" Type="datetime" Nullable="false" />
+    <Property Name="usrId" Type="bigint" Nullable="false" />
+    <Property Name="Data" Type="varbinary(max)" Nullable="false" />
+    <Property Name="CategoríaId" Type="bigint" Nullable="false" />
+    <Property Name="EXIFId" Type="bigint" Nullable="false" />
+    <Property Name="numLikes" Type="bigint" Nullable="false" />
+    <Property Name="author" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="UserProfile">
+    <Key>
+      <PropertyRef Name="usrId" />
+    </Key>
+    <Property Name="usrId" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="loginName" Type="varchar" Nullable="false" MaxLength="30" />
+    <Property Name="enPassword" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="firstName" Type="varchar" Nullable="false" MaxLength="30" />
+    <Property Name="lastName" Type="varchar" Nullable="false" MaxLength="40" />
+    <Property Name="email" Type="varchar" Nullable="false" MaxLength="60" />
+    <Property Name="language" Type="varchar" Nullable="false" MaxLength="2" />
+    <Property Name="country" Type="varchar" Nullable="false" MaxLength="2" />
+  </EntityType>
+  <EntityType Name="CategorySet">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Nombre" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="CommentSet">
+    <Key>
+      <PropertyRef Name="comentarioId" />
+    </Key>
+    <Property Name="comentarioId" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ImagenSetId" Type="bigint" Nullable="false" />
+    <Property Name="UserProfile_usrId" Type="bigint" Nullable="false" />
+    <Property Name="Texto" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Date" Type="datetime" Nullable="false" />
+    <Property Name="author" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="EXIFSet">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Apertura" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="TExposicion" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="ISO" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="WB" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TagSet">
+    <Key>
+      <PropertyRef Name="TagId" />
+    </Key>
+    <Property Name="TagId" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="title" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="usedTimes" Type="bigint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="UserProfileUserProfile">
+    <Key>
+      <PropertyRef Name="Seguido_usrId" />
+      <PropertyRef Name="Seguidor_usrId" />
+    </Key>
+    <Property Name="Seguido_usrId" Type="bigint" Nullable="false" />
+    <Property Name="Seguidor_usrId" Type="bigint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TagImageSet">
+    <Key>
+      <PropertyRef Name="Tag_TagId" />
+      <PropertyRef Name="ImageSet_Id" />
+    </Key>
+    <Property Name="Tag_TagId" Type="bigint" Nullable="false" />
+    <Property Name="ImageSet_Id" Type="bigint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="UserProfileImageSet">
+    <Key>
+      <PropertyRef Name="UserProfile1_usrId" />
+      <PropertyRef Name="ImageSet_Id" />
+    </Key>
+    <Property Name="UserProfile1_usrId" Type="bigint" Nullable="false" />
+    <Property Name="ImageSet_Id" Type="bigint" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_ImagenUserProfile">
+    <End Role="UserProfile" Type="Es.UDC.DotNet.PracticaMaD.Store.UserProfile" Multiplicity="1" />
+    <End Role="ImagenSet" Type="Es.UDC.DotNet.PracticaMaD.Store.ImagenSet" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UserProfile">
+        <PropertyRef Name="usrId" />
+      </Principal>
+      <Dependent Role="ImagenSet">
+        <PropertyRef Name="usrId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="CategoríaImagenSet">
+    <End Role="Categoría" Type="Es.UDC.DotNet.PracticaMaD.Store.CategorySet" Multiplicity="1" />
+    <End Role="ImagenSet" Type="Es.UDC.DotNet.PracticaMaD.Store.ImagenSet" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Categoría">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ImagenSet">
+        <PropertyRef Name="CategoríaId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="ComentarioImagenSet">
+    <End Role="Comentario" Type="Es.UDC.DotNet.PracticaMaD.Store.CommentSet" Multiplicity="*" />
+    <End Role="ImagenSet" Type="Es.UDC.DotNet.PracticaMaD.Store.ImagenSet" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <ReferentialConstraint>
+      <Principal Role="ImagenSet">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Comentario">
+        <PropertyRef Name="ImagenSetId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="ComentarioUserProfile">
+    <End Role="Comentario" Type="Es.UDC.DotNet.PracticaMaD.Store.CommentSet" Multiplicity="*" />
+    <End Role="UserProfile" Type="Es.UDC.DotNet.PracticaMaD.Store.UserProfile" Multiplicity="1" />
+    <ReferentialConstraint>
+      <Principal Role="UserProfile">
+        <PropertyRef Name="usrId" />
+      </Principal>
+      <Dependent Role="Comentario">
+        <PropertyRef Name="UserProfile_usrId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="EXIFImageSet">
+    <End Role="EXIF" Type="Es.UDC.DotNet.PracticaMaD.Store.EXIFSet" Multiplicity="1" />
+    <End Role="ImageSet" Type="Es.UDC.DotNet.PracticaMaD.Store.ImagenSet" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EXIF">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ImageSet">
+        <PropertyRef Name="EXIFId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserProfileUserProfile_UserProfile">
+    <End Role="UserProfile" Type="Es.UDC.DotNet.PracticaMaD.Store.UserProfile" Multiplicity="1" />
+    <End Role="UserProfileUserProfile" Type="Es.UDC.DotNet.PracticaMaD.Store.UserProfileUserProfile" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UserProfile">
+        <PropertyRef Name="usrId" />
+      </Principal>
+      <Dependent Role="UserProfileUserProfile">
+        <PropertyRef Name="Seguido_usrId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserProfileUserProfile_UserProfile1">
+    <End Role="UserProfileUserProfile" Type="Es.UDC.DotNet.PracticaMaD.Store.UserProfileUserProfile" Multiplicity="*" />
+    <End Role="UserProfile1" Type="Es.UDC.DotNet.PracticaMaD.Store.UserProfile" Multiplicity="1" />
+    <ReferentialConstraint>
+      <Principal Role="UserProfile1">
+        <PropertyRef Name="usrId" />
+      </Principal>
+      <Dependent Role="UserProfileUserProfile">
+        <PropertyRef Name="Seguidor_usrId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TagImageSet_Tag">
+    <End Role="Tag" Type="Es.UDC.DotNet.PracticaMaD.Store.TagSet" Multiplicity="1" />
+    <End Role="TagImageSet" Type="Es.UDC.DotNet.PracticaMaD.Store.TagImageSet" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tag">
+        <PropertyRef Name="TagId" />
+      </Principal>
+      <Dependent Role="TagImageSet">
+        <PropertyRef Name="Tag_TagId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TagImageSet_ImageSet">
+    <End Role="TagImageSet" Type="Es.UDC.DotNet.PracticaMaD.Store.TagImageSet" Multiplicity="*" />
+    <End Role="ImageSet" Type="Es.UDC.DotNet.PracticaMaD.Store.ImagenSet" Multiplicity="1" />
+    <ReferentialConstraint>
+      <Principal Role="ImageSet">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="TagImageSet">
+        <PropertyRef Name="ImageSet_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserProfileImageSet_UserProfile">
+    <End Role="UserProfile" Type="Es.UDC.DotNet.PracticaMaD.Store.UserProfile" Multiplicity="1" />
+    <End Role="UserProfileImageSet" Type="Es.UDC.DotNet.PracticaMaD.Store.UserProfileImageSet" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UserProfile">
+        <PropertyRef Name="usrId" />
+      </Principal>
+      <Dependent Role="UserProfileImageSet">
+        <PropertyRef Name="UserProfile1_usrId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserProfileImageSet_ImageSet">
+    <End Role="UserProfileImageSet" Type="Es.UDC.DotNet.PracticaMaD.Store.UserProfileImageSet" Multiplicity="*" />
+    <End Role="ImageSet" Type="Es.UDC.DotNet.PracticaMaD.Store.ImagenSet" Multiplicity="1" />
+    <ReferentialConstraint>
+      <Principal Role="ImageSet">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="UserProfileImageSet">
+        <PropertyRef Name="ImageSet_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="Es.UDC.DotNet.PracticaMaD" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="ImageSet">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Titulo" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Descripcion" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="FechaDeSubida" Type="DateTime" Nullable="false" />
+          <Property Name="usrId" Type="Int64" Nullable="false" />
+          <NavigationProperty Name="UserProfile" Relationship="Self.FK_ImagenUserProfile" FromRole="ImagenSet" ToRole="UserProfile" />
+          <Property Name="Data" Type="Binary" Nullable="false" />
+          <NavigationProperty Name="Categoría" Relationship="Es.UDC.DotNet.PracticaMaD.CategoríaImagenSet" FromRole="ImagenSet" ToRole="Categoría" />
+          <Property Name="CategoríaId" Type="Int64" Nullable="false" />
+          <NavigationProperty Name="Comentario" Relationship="Es.UDC.DotNet.PracticaMaD.ComentarioImagenSet" FromRole="ImagenSet" ToRole="Comentario" />
+          <NavigationProperty Name="EXIF" Relationship="Es.UDC.DotNet.PracticaMaD.EXIFImageSet" FromRole="ImageSet" ToRole="EXIF" />
+          <Property Name="EXIFId" Type="Int64" Nullable="false" />
+          <NavigationProperty Name="Tag" Relationship="Es.UDC.DotNet.PracticaMaD.TagImageSet" FromRole="ImageSet" ToRole="Tag" />
+          <Property Name="numLikes" Type="Int64" Nullable="false" />
+          <NavigationProperty Name="UserProfile1" Relationship="Es.UDC.DotNet.PracticaMaD.UserProfileImageSet" FromRole="ImageSet" ToRole="UserProfile" />
+          <Property Name="author" Type="String" Nullable="false" />
+        </EntityType>
+        <EntityType Name="UserProfile">
+          <Key>
+            <PropertyRef Name="usrId" />
+          </Key>
+          <Property Name="usrId" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="loginName" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="enPassword" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="firstName" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="lastName" Type="String" MaxLength="40" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="email" Type="String" MaxLength="60" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="language" Type="String" MaxLength="2" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="country" Type="String" MaxLength="2" FixedLength="false" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="ImagenSet" Relationship="Self.FK_ImagenUserProfile" FromRole="UserProfile" ToRole="ImagenSet" />
+          <NavigationProperty Name="Comentario" Relationship="Es.UDC.DotNet.PracticaMaD.ComentarioUserProfile" FromRole="UserProfile" ToRole="Comentario" />
+          <NavigationProperty Name="Seguidor" Relationship="Es.UDC.DotNet.PracticaMaD.UserProfileUserProfile" FromRole="UserProfile" ToRole="UserProfile1" />
+          <NavigationProperty Name="Seguido" Relationship="Es.UDC.DotNet.PracticaMaD.UserProfileUserProfile" FromRole="UserProfile1" ToRole="UserProfile" />
+          <NavigationProperty Name="ImageSet" Relationship="Es.UDC.DotNet.PracticaMaD.UserProfileImageSet" FromRole="UserProfile" ToRole="ImageSet" />
+          </EntityType>
+        <Association Name="FK_ImagenUserProfile">
+          <End Role="UserProfile" Type="Self.UserProfile" Multiplicity="1" />
+          <End Role="ImagenSet" Type="Es.UDC.DotNet.PracticaMaD.ImageSet" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="UserProfile">
+              <PropertyRef Name="usrId" />
+            </Principal>
+            <Dependent Role="ImagenSet">
+              <PropertyRef Name="usrId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="PracticaMaDEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="ImagenSet" EntityType="Es.UDC.DotNet.PracticaMaD.ImageSet" />
+          <EntitySet Name="UserProfile" EntityType="Self.UserProfile" />
+          <AssociationSet Name="FK_ImagenUserProfile" Association="Self.FK_ImagenUserProfile">
+            <End Role="UserProfile" EntitySet="UserProfile" />
+            <End Role="ImagenSet" EntitySet="ImagenSet" />
+          </AssociationSet>
+          <EntitySet Name="CategorySet" EntityType="Es.UDC.DotNet.PracticaMaD.Category" />
+          <AssociationSet Name="CategoríaImagenSet" Association="Es.UDC.DotNet.PracticaMaD.CategoríaImagenSet">
+            <End Role="Categoría" EntitySet="CategorySet" />
+            <End Role="ImagenSet" EntitySet="ImagenSet" />
+          </AssociationSet>
+          <EntitySet Name="CommentSet" EntityType="Es.UDC.DotNet.PracticaMaD.Comment" />
+          <AssociationSet Name="ComentarioImagenSet" Association="Es.UDC.DotNet.PracticaMaD.ComentarioImagenSet">
+            <End Role="Comentario" EntitySet="CommentSet" />
+            <End Role="ImagenSet" EntitySet="ImagenSet" />
+          </AssociationSet>
+          <AssociationSet Name="ComentarioUserProfile" Association="Es.UDC.DotNet.PracticaMaD.ComentarioUserProfile">
+            <End Role="Comentario" EntitySet="CommentSet" />
+            <End Role="UserProfile" EntitySet="UserProfile" />
+          </AssociationSet>
+          <AssociationSet Name="UserProfileUserProfile" Association="Es.UDC.DotNet.PracticaMaD.UserProfileUserProfile">
+            <End Role="UserProfile" EntitySet="UserProfile" />
+            <End Role="UserProfile1" EntitySet="UserProfile" />
+          </AssociationSet>
+          <EntitySet Name="EXIFSet" EntityType="Es.UDC.DotNet.PracticaMaD.EXIF" />
+          <AssociationSet Name="EXIFImageSet" Association="Es.UDC.DotNet.PracticaMaD.EXIFImageSet">
+            <End Role="EXIF" EntitySet="EXIFSet" />
+            <End Role="ImageSet" EntitySet="ImagenSet" />
+          </AssociationSet>
+          <EntitySet Name="TagSet" EntityType="Es.UDC.DotNet.PracticaMaD.Tag" />
+          <AssociationSet Name="TagImageSet" Association="Es.UDC.DotNet.PracticaMaD.TagImageSet">
+            <End Role="Tag" EntitySet="TagSet" />
+            <End Role="ImageSet" EntitySet="ImagenSet" />
+          </AssociationSet>
+          <AssociationSet Name="UserProfileImageSet" Association="Es.UDC.DotNet.PracticaMaD.UserProfileImageSet">
+            <End Role="UserProfile" EntitySet="UserProfile" />
+            <End Role="ImageSet" EntitySet="ImagenSet" />
+          </AssociationSet>
+          </EntityContainer>
+        <EntityType Name="Category">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Nombre" Type="String" Nullable="false" />
+          <NavigationProperty Name="ImagenSet" Relationship="Es.UDC.DotNet.PracticaMaD.CategoríaImagenSet" FromRole="Categoría" ToRole="ImagenSet" />
+        </EntityType>
+        <Association Name="CategoríaImagenSet">
+          <End Type="Es.UDC.DotNet.PracticaMaD.Category" Role="Categoría" Multiplicity="1" />
+          <End Type="Es.UDC.DotNet.PracticaMaD.ImageSet" Role="ImagenSet" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Categoría">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="ImagenSet">
+              <PropertyRef Name="CategoríaId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="Comment">
+          <Key>
+            <PropertyRef Name="comentarioId" />
+          </Key>
+          <Property Name="comentarioId" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <NavigationProperty Name="ImagenSet" Relationship="Es.UDC.DotNet.PracticaMaD.ComentarioImagenSet" FromRole="Comentario" ToRole="ImagenSet" />
+          <Property Name="ImagenSetId" Type="Int64" Nullable="false" />
+          <NavigationProperty Name="UserProfile" Relationship="Es.UDC.DotNet.PracticaMaD.ComentarioUserProfile" FromRole="Comentario" ToRole="UserProfile" />
+          <Property Name="UserProfile_usrId" Type="Int64" Nullable="false" />
+          <Property Name="Texto" Type="String" Nullable="false" />
+          <Property Name="Date" Type="DateTime" Nullable="false" />
+          <Property Name="author" Type="String" Nullable="false" />
+        </EntityType>
+        <Association Name="ComentarioImagenSet">
+          <End Type="Es.UDC.DotNet.PracticaMaD.Comment" Role="Comentario" Multiplicity="*" />
+          <End Type="Es.UDC.DotNet.PracticaMaD.ImageSet" Role="ImagenSet" Multiplicity="1" >
+            <OnDelete Action="Cascade" />
+          </End>
+          <ReferentialConstraint>
+            <Principal Role="ImagenSet">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Comentario">
+              <PropertyRef Name="ImagenSetId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="ComentarioUserProfile">
+          <End Type="Es.UDC.DotNet.PracticaMaD.Comment" Role="Comentario" Multiplicity="*" />
+          <End Type="Es.UDC.DotNet.PracticaMaD.UserProfile" Role="UserProfile" Multiplicity="1" />
+          <ReferentialConstraint>
+            <Principal Role="UserProfile">
+              <PropertyRef Name="usrId" />
+            </Principal>
+            <Dependent Role="Comentario">
+              <PropertyRef Name="UserProfile_usrId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="UserProfileUserProfile">
+          <End Type="Es.UDC.DotNet.PracticaMaD.UserProfile" Role="UserProfile" Multiplicity="*" />
+          <End Type="Es.UDC.DotNet.PracticaMaD.UserProfile" Role="UserProfile1" Multiplicity="*" />
+        </Association>
+        <EntityType Name="EXIF">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Apertura" Type="String" Nullable="false" />
+          <Property Name="TExposicion" Type="String" Nullable="false" />
+          <Property Name="ISO" Type="String" Nullable="false" />
+          <Property Name="WB" Type="String" Nullable="false" />
+          <NavigationProperty Name="ImageSet" Relationship="Es.UDC.DotNet.PracticaMaD.EXIFImageSet" FromRole="EXIF" ToRole="ImageSet" />
+        </EntityType>
+        <Association Name="EXIFImageSet">
+          <End Type="Es.UDC.DotNet.PracticaMaD.EXIF" Role="EXIF" Multiplicity="1" />
+          <End Type="Es.UDC.DotNet.PracticaMaD.ImageSet" Role="ImageSet" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="EXIF">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="ImageSet">
+              <PropertyRef Name="EXIFId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="Tag">
+          <Key>
+            <PropertyRef Name="TagId" />
+          </Key>
+          <Property Name="TagId" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="title" Type="String" Nullable="false" />
+          <Property Name="usedTimes" Type="Int64" Nullable="false" />
+          <NavigationProperty Name="ImageSet" Relationship="Es.UDC.DotNet.PracticaMaD.TagImageSet" FromRole="Tag" ToRole="ImageSet" />
+        </EntityType>
+        <Association Name="TagImageSet">
+          <End Type="Es.UDC.DotNet.PracticaMaD.Tag" Role="Tag" Multiplicity="*" />
+          <End Type="Es.UDC.DotNet.PracticaMaD.ImageSet" Role="ImageSet" Multiplicity="*" />
+        </Association>
+        <Association Name="UserProfileImageSet">
+          <End Type="Es.UDC.DotNet.PracticaMaD.UserProfile" Role="UserProfile" Multiplicity="*" />
+          <End Type="Es.UDC.DotNet.PracticaMaD.ImageSet" Role="ImageSet" Multiplicity="*" >
+          </End>
+        </Association>
+        </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+    <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="EsUDCDotNetPracticaMaDStoreContainer" CdmEntityContainer="PracticaMaDEntities">
+    <EntitySetMapping Name="ImagenSet">
+      <EntityTypeMapping TypeName="IsTypeOf(Es.UDC.DotNet.PracticaMaD.ImageSet)">
+        <MappingFragment StoreEntitySet="ImagenSet">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Titulo" ColumnName="Titulo" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+          <ScalarProperty Name="FechaDeSubida" ColumnName="FechaDeSubida" />
+          <ScalarProperty Name="usrId" ColumnName="usrId" />
+          <ScalarProperty Name="Data" ColumnName="Data" />
+          <ScalarProperty Name="CategoríaId" ColumnName="CategoríaId" />
+          <ScalarProperty Name="EXIFId" ColumnName="EXIFId" />
+          <ScalarProperty Name="numLikes" ColumnName="numLikes" />
+          <ScalarProperty Name="author" ColumnName="author" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserProfile">
+      <EntityTypeMapping TypeName="IsTypeOf(Es.UDC.DotNet.PracticaMaD.UserProfile)">
+        <MappingFragment StoreEntitySet="UserProfile">
+          <ScalarProperty Name="usrId" ColumnName="usrId" />
+          <ScalarProperty Name="loginName" ColumnName="loginName" />
+          <ScalarProperty Name="enPassword" ColumnName="enPassword" />
+          <ScalarProperty Name="firstName" ColumnName="firstName" />
+          <ScalarProperty Name="lastName" ColumnName="lastName" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="language" ColumnName="language" />
+          <ScalarProperty Name="country" ColumnName="country" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CategorySet">
+      <EntityTypeMapping TypeName="IsTypeOf(Es.UDC.DotNet.PracticaMaD.Category)">
+        <MappingFragment StoreEntitySet="CategorySet">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CommentSet">
+      <EntityTypeMapping TypeName="IsTypeOf(Es.UDC.DotNet.PracticaMaD.Comment)">
+        <MappingFragment StoreEntitySet="CommentSet">
+          <ScalarProperty Name="comentarioId" ColumnName="comentarioId" />
+          <ScalarProperty Name="ImagenSetId" ColumnName="ImagenSetId" />
+          <ScalarProperty Name="UserProfile_usrId" ColumnName="UserProfile_usrId" />
+          <ScalarProperty Name="Texto" ColumnName="Texto" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="author" ColumnName="author" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EXIFSet">
+      <EntityTypeMapping TypeName="IsTypeOf(Es.UDC.DotNet.PracticaMaD.EXIF)">
+        <MappingFragment StoreEntitySet="EXIFSet">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Apertura" ColumnName="Apertura" />
+          <ScalarProperty Name="TExposicion" ColumnName="TExposicion" />
+          <ScalarProperty Name="ISO" ColumnName="ISO" />
+          <ScalarProperty Name="WB" ColumnName="WB" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TagSet">
+      <EntityTypeMapping TypeName="IsTypeOf(Es.UDC.DotNet.PracticaMaD.Tag)">
+        <MappingFragment StoreEntitySet="TagSet">
+          <ScalarProperty Name="TagId" ColumnName="TagId" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="usedTimes" ColumnName="usedTimes" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="UserProfileUserProfile" TypeName="Es.UDC.DotNet.PracticaMaD.UserProfileUserProfile" StoreEntitySet="UserProfileUserProfile">
+      <EndProperty Name="UserProfile">
+        <ScalarProperty Name="usrId" ColumnName="Seguido_usrId" />
+      </EndProperty>
+      <EndProperty Name="UserProfile1">
+        <ScalarProperty Name="usrId" ColumnName="Seguidor_usrId" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="TagImageSet" TypeName="Es.UDC.DotNet.PracticaMaD.TagImageSet" StoreEntitySet="TagImageSet">
+      <EndProperty Name="Tag">
+        <ScalarProperty Name="TagId" ColumnName="Tag_TagId" />
+      </EndProperty>
+      <EndProperty Name="ImageSet">
+        <ScalarProperty Name="Id" ColumnName="ImageSet_Id" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="UserProfileImageSet" TypeName="Es.UDC.DotNet.PracticaMaD.UserProfileImageSet" StoreEntitySet="UserProfileImageSet">
+      <EndProperty Name="UserProfile">
+        <ScalarProperty Name="usrId" ColumnName="UserProfile1_usrId" />
+      </EndProperty>
+      <EndProperty Name="ImageSet">
+        <ScalarProperty Name="Id" ColumnName="ImageSet_Id" />
+      </EndProperty>
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping></edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="False" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Ninguno" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

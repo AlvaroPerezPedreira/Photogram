@@ -1,0 +1,200 @@
+C:\Users\Administrador\source\repos\practica-mad-mad01\UnitTest\bin\Debug\es\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.resources.dll
+C:\Users\Administrador\source\repos\practica-mad-mad01\UnitTest\bin\Debug\es\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.resources.dll
+C:\Users\Administrador\source\repos\practica-mad-mad01\UnitTest\bin\Debug\es\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+C:\Users\Administrador\source\repos\practica-mad-mad01\UnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\Administrador\source\repos\practica-mad-mad01\UnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\Administrador\source\repos\practica-mad-mad01\UnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\Administrador\source\repos\practica-mad-mad01\UnitTest\bin\Debug\UnitTest.dll.config
+C:\Users\Administrador\source\repos\practica-mad-mad01\UnitTest\bin\Debug\UnitTest.dll
+C:\Users\Administrador\source\repos\practica-mad-mad01\UnitTest\bin\Debug\UnitTest.pdb
+C:\Users\Administrador\source\repos\practica-mad-mad01\UnitTest\bin\Debug\Castle.Core.dll
+C:\Users\Administrador\source\repos\practica-mad-mad01\UnitTest\bin\Debug\EntityFramework.dll
+C:\Users\Administrador\source\repos\practica-mad-mad01\UnitTest\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Administrador\source\repos\practica-mad-mad01\UnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Users\Administrador\source\repos\practica-mad-mad01\UnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Users\Administrador\source\repos\practica-mad-mad01\UnitTest\bin\Debug\Model.dll
+C:\Users\Administrador\source\repos\practica-mad-mad01\UnitTest\bin\Debug\Ninject.dll
+C:\Users\Administrador\source\repos\practica-mad-mad01\UnitTest\bin\Debug\ModelUtil.dll
+C:\Users\Administrador\source\repos\practica-mad-mad01\UnitTest\bin\Debug\Model.pdb
+C:\Users\Administrador\source\repos\practica-mad-mad01\UnitTest\bin\Debug\Model.dll.config
+C:\Users\Administrador\source\repos\practica-mad-mad01\UnitTest\bin\Debug\Castle.Core.xml
+C:\Users\Administrador\source\repos\practica-mad-mad01\UnitTest\bin\Debug\EntityFramework.xml
+C:\Users\Administrador\source\repos\practica-mad-mad01\UnitTest\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Administrador\source\repos\practica-mad-mad01\UnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Users\Administrador\source\repos\practica-mad-mad01\UnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Users\Administrador\source\repos\practica-mad-mad01\UnitTest\bin\Debug\Ninject.xml
+C:\Users\Administrador\source\repos\practica-mad-mad01\UnitTest\obj\Debug\UnitTest.csproj.AssemblyReference.cache
+C:\Users\Administrador\source\repos\practica-mad-mad01\UnitTest\obj\Debug\UnitTest.csproj.CoreCompileInputs.cache
+C:\Users\Administrador\source\repos\practica-mad-mad01\UnitTest\obj\Debug\UnitTest.csproj.CopyComplete
+C:\Users\Administrador\source\repos\practica-mad-mad01\UnitTest\obj\Debug\UnitTest.dll
+C:\Users\Administrador\source\repos\practica-mad-mad01\UnitTest\obj\Debug\UnitTest.pdb
+C:\Users\Administrador\source\repos\practica-mad-mad01\UnitTest\bin\Debug\Ninject.Extensions.Interception.dll
+C:\Users\Administrador\source\repos\practica-mad-mad01\UnitTest\bin\Debug\Ninject.Extensions.Interception.DynamicProxy.dll
+C:\Users\Administrador\source\repos\practica-mad-mad01\UnitTest\bin\Debug\Ninject.Extensions.Xml.dll
+C:\Users\Administrador\source\repos\practica-mad-mad01\UnitTest\bin\Debug\Ninject.Extensions.Interception.xml
+C:\Users\Administrador\source\repos\practica-mad-mad01\UnitTest\bin\Debug\Ninject.Extensions.Interception.DynamicProxy.xml
+C:\Users\Administrador\source\repos\practica-mad-mad01\UnitTest\bin\Debug\Ninject.Extensions.Xml.xml
+C:\Users\Administrador\source\repos\practica-mad-mad01\UnitTest\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+C:\Users\Administrador\source\repos\practica-mad-mad01\UnitTest\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Logging.dll
+C:\Users\Administrador\source\repos\practica-mad-mad01\UnitTest\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.xml
+C:\Users\Administrador\source\repos\practica-mad-mad01\UnitTest\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Logging.xml
+C:\Users\Miguel\source\repos\practica-mad-mad01\UnitTest\obj\Debug\UnitTest.csproj.AssemblyReference.cache
+C:\Users\Miguel\source\repos\practica-mad-mad01\UnitTest\obj\Debug\UnitTest.csproj.CoreCompileInputs.cache
+C:\Users\Miguel\source\repos\practica-mad-mad01\UnitTest\obj\Debug\UnitTest.dll
+C:\Users\Miguel\source\repos\practica-mad-mad01\UnitTest\obj\Debug\UnitTest.pdb
+C:\Users\migue\source\repos\practica-mad-mad01\UnitTest\obj\Debug\UnitTest.csprojAssemblyReference.cache
+C:\Users\migue\source\repos\practica-mad-mad01\UnitTest\obj\Debug\UnitTest.csproj.CoreCompileInputs.cache
+C:\Users\migue\source\repos\practica-mad-mad01\UnitTest\bin\Debug\es\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.resources.dll
+C:\Users\migue\source\repos\practica-mad-mad01\UnitTest\bin\Debug\es\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.resources.dll
+C:\Users\migue\source\repos\practica-mad-mad01\UnitTest\bin\Debug\es\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+C:\Users\migue\source\repos\practica-mad-mad01\UnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\migue\source\repos\practica-mad-mad01\UnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\migue\source\repos\practica-mad-mad01\UnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\migue\source\repos\practica-mad-mad01\UnitTest\bin\Debug\UnitTest.dll.config
+C:\Users\migue\source\repos\practica-mad-mad01\UnitTest\bin\Debug\UnitTest.dll
+C:\Users\migue\source\repos\practica-mad-mad01\UnitTest\bin\Debug\UnitTest.pdb
+C:\Users\migue\source\repos\practica-mad-mad01\UnitTest\bin\Debug\Castle.Core.dll
+C:\Users\migue\source\repos\practica-mad-mad01\UnitTest\bin\Debug\EntityFramework.dll
+C:\Users\migue\source\repos\practica-mad-mad01\UnitTest\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\migue\source\repos\practica-mad-mad01\UnitTest\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+C:\Users\migue\source\repos\practica-mad-mad01\UnitTest\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Logging.dll
+C:\Users\migue\source\repos\practica-mad-mad01\UnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Users\migue\source\repos\practica-mad-mad01\UnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Users\migue\source\repos\practica-mad-mad01\UnitTest\bin\Debug\Model.dll
+C:\Users\migue\source\repos\practica-mad-mad01\UnitTest\bin\Debug\ModelUtil.dll
+C:\Users\migue\source\repos\practica-mad-mad01\UnitTest\bin\Debug\Ninject.dll
+C:\Users\migue\source\repos\practica-mad-mad01\UnitTest\bin\Debug\Ninject.Extensions.Interception.dll
+C:\Users\migue\source\repos\practica-mad-mad01\UnitTest\bin\Debug\Ninject.Extensions.Interception.DynamicProxy.dll
+C:\Users\migue\source\repos\practica-mad-mad01\UnitTest\bin\Debug\Ninject.Extensions.Xml.dll
+C:\Users\migue\source\repos\practica-mad-mad01\UnitTest\bin\Debug\Model.pdb
+C:\Users\migue\source\repos\practica-mad-mad01\UnitTest\bin\Debug\Model.dll.config
+C:\Users\migue\source\repos\practica-mad-mad01\UnitTest\bin\Debug\Castle.Core.xml
+C:\Users\migue\source\repos\practica-mad-mad01\UnitTest\bin\Debug\EntityFramework.xml
+C:\Users\migue\source\repos\practica-mad-mad01\UnitTest\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\migue\source\repos\practica-mad-mad01\UnitTest\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.xml
+C:\Users\migue\source\repos\practica-mad-mad01\UnitTest\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Logging.xml
+C:\Users\migue\source\repos\practica-mad-mad01\UnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Users\migue\source\repos\practica-mad-mad01\UnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Users\migue\source\repos\practica-mad-mad01\UnitTest\bin\Debug\Ninject.xml
+C:\Users\migue\source\repos\practica-mad-mad01\UnitTest\bin\Debug\Ninject.Extensions.Interception.xml
+C:\Users\migue\source\repos\practica-mad-mad01\UnitTest\bin\Debug\Ninject.Extensions.Interception.DynamicProxy.xml
+C:\Users\migue\source\repos\practica-mad-mad01\UnitTest\bin\Debug\Ninject.Extensions.Xml.xml
+C:\Users\migue\source\repos\practica-mad-mad01\UnitTest\obj\Debug\UnitTest.csproj.CopyComplete
+C:\Users\migue\source\repos\practica-mad-mad01\UnitTest\obj\Debug\UnitTest.dll
+C:\Users\migue\source\repos\practica-mad-mad01\UnitTest\obj\Debug\UnitTest.pdb
+C:\Users\Miguel\source\repos\practica-mad-mad01\UnitTest\bin\Debug\es\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.resources.dll
+C:\Users\Miguel\source\repos\practica-mad-mad01\UnitTest\bin\Debug\es\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.resources.dll
+C:\Users\Miguel\source\repos\practica-mad-mad01\UnitTest\bin\Debug\es\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+C:\Users\Miguel\source\repos\practica-mad-mad01\UnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\Miguel\source\repos\practica-mad-mad01\UnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\Miguel\source\repos\practica-mad-mad01\UnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\Miguel\source\repos\practica-mad-mad01\UnitTest\bin\Debug\UnitTest.dll.config
+C:\Users\Miguel\source\repos\practica-mad-mad01\UnitTest\bin\Debug\UnitTest.dll
+C:\Users\Miguel\source\repos\practica-mad-mad01\UnitTest\bin\Debug\UnitTest.pdb
+C:\Users\Miguel\source\repos\practica-mad-mad01\UnitTest\bin\Debug\Castle.Core.dll
+C:\Users\Miguel\source\repos\practica-mad-mad01\UnitTest\bin\Debug\EntityFramework.dll
+C:\Users\Miguel\source\repos\practica-mad-mad01\UnitTest\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Miguel\source\repos\practica-mad-mad01\UnitTest\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+C:\Users\Miguel\source\repos\practica-mad-mad01\UnitTest\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Logging.dll
+C:\Users\Miguel\source\repos\practica-mad-mad01\UnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Users\Miguel\source\repos\practica-mad-mad01\UnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Users\Miguel\source\repos\practica-mad-mad01\UnitTest\bin\Debug\Model.dll
+C:\Users\Miguel\source\repos\practica-mad-mad01\UnitTest\bin\Debug\ModelUtil.dll
+C:\Users\Miguel\source\repos\practica-mad-mad01\UnitTest\bin\Debug\Ninject.dll
+C:\Users\Miguel\source\repos\practica-mad-mad01\UnitTest\bin\Debug\Ninject.Extensions.Interception.dll
+C:\Users\Miguel\source\repos\practica-mad-mad01\UnitTest\bin\Debug\Ninject.Extensions.Interception.DynamicProxy.dll
+C:\Users\Miguel\source\repos\practica-mad-mad01\UnitTest\bin\Debug\Ninject.Extensions.Xml.dll
+C:\Users\Miguel\source\repos\practica-mad-mad01\UnitTest\bin\Debug\Model.pdb
+C:\Users\Miguel\source\repos\practica-mad-mad01\UnitTest\bin\Debug\Model.dll.config
+C:\Users\Miguel\source\repos\practica-mad-mad01\UnitTest\bin\Debug\Castle.Core.xml
+C:\Users\Miguel\source\repos\practica-mad-mad01\UnitTest\bin\Debug\EntityFramework.xml
+C:\Users\Miguel\source\repos\practica-mad-mad01\UnitTest\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Miguel\source\repos\practica-mad-mad01\UnitTest\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.xml
+C:\Users\Miguel\source\repos\practica-mad-mad01\UnitTest\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Logging.xml
+C:\Users\Miguel\source\repos\practica-mad-mad01\UnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Users\Miguel\source\repos\practica-mad-mad01\UnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Users\Miguel\source\repos\practica-mad-mad01\UnitTest\bin\Debug\Ninject.xml
+C:\Users\Miguel\source\repos\practica-mad-mad01\UnitTest\bin\Debug\Ninject.Extensions.Interception.xml
+C:\Users\Miguel\source\repos\practica-mad-mad01\UnitTest\bin\Debug\Ninject.Extensions.Interception.DynamicProxy.xml
+C:\Users\Miguel\source\repos\practica-mad-mad01\UnitTest\bin\Debug\Ninject.Extensions.Xml.xml
+C:\Users\Miguel\source\repos\practica-mad-mad01\UnitTest\obj\Debug\UnitTest.csproj.CopyComplete
+C:\Users\dava\source\repos\practica-mad-mad01\UnitTest\bin\Debug\es\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.resources.dll
+C:\Users\dava\source\repos\practica-mad-mad01\UnitTest\bin\Debug\es\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.resources.dll
+C:\Users\dava\source\repos\practica-mad-mad01\UnitTest\bin\Debug\es\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+C:\Users\dava\source\repos\practica-mad-mad01\UnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\dava\source\repos\practica-mad-mad01\UnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\dava\source\repos\practica-mad-mad01\UnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\dava\source\repos\practica-mad-mad01\UnitTest\bin\Debug\UnitTest.dll.config
+C:\Users\dava\source\repos\practica-mad-mad01\UnitTest\bin\Debug\UnitTest.dll
+C:\Users\dava\source\repos\practica-mad-mad01\UnitTest\bin\Debug\UnitTest.pdb
+C:\Users\dava\source\repos\practica-mad-mad01\UnitTest\bin\Debug\Castle.Core.dll
+C:\Users\dava\source\repos\practica-mad-mad01\UnitTest\bin\Debug\EntityFramework.dll
+C:\Users\dava\source\repos\practica-mad-mad01\UnitTest\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\dava\source\repos\practica-mad-mad01\UnitTest\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+C:\Users\dava\source\repos\practica-mad-mad01\UnitTest\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Logging.dll
+C:\Users\dava\source\repos\practica-mad-mad01\UnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Users\dava\source\repos\practica-mad-mad01\UnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Users\dava\source\repos\practica-mad-mad01\UnitTest\bin\Debug\Model.dll
+C:\Users\dava\source\repos\practica-mad-mad01\UnitTest\bin\Debug\ModelUtil.dll
+C:\Users\dava\source\repos\practica-mad-mad01\UnitTest\bin\Debug\Ninject.dll
+C:\Users\dava\source\repos\practica-mad-mad01\UnitTest\bin\Debug\Ninject.Extensions.Interception.dll
+C:\Users\dava\source\repos\practica-mad-mad01\UnitTest\bin\Debug\Ninject.Extensions.Interception.DynamicProxy.dll
+C:\Users\dava\source\repos\practica-mad-mad01\UnitTest\bin\Debug\Ninject.Extensions.Xml.dll
+C:\Users\dava\source\repos\practica-mad-mad01\UnitTest\bin\Debug\Model.pdb
+C:\Users\dava\source\repos\practica-mad-mad01\UnitTest\bin\Debug\Model.dll.config
+C:\Users\dava\source\repos\practica-mad-mad01\UnitTest\bin\Debug\Castle.Core.xml
+C:\Users\dava\source\repos\practica-mad-mad01\UnitTest\bin\Debug\EntityFramework.xml
+C:\Users\dava\source\repos\practica-mad-mad01\UnitTest\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\dava\source\repos\practica-mad-mad01\UnitTest\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.xml
+C:\Users\dava\source\repos\practica-mad-mad01\UnitTest\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Logging.xml
+C:\Users\dava\source\repos\practica-mad-mad01\UnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Users\dava\source\repos\practica-mad-mad01\UnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Users\dava\source\repos\practica-mad-mad01\UnitTest\bin\Debug\Ninject.xml
+C:\Users\dava\source\repos\practica-mad-mad01\UnitTest\bin\Debug\Ninject.Extensions.Interception.xml
+C:\Users\dava\source\repos\practica-mad-mad01\UnitTest\bin\Debug\Ninject.Extensions.Interception.DynamicProxy.xml
+C:\Users\dava\source\repos\practica-mad-mad01\UnitTest\bin\Debug\Ninject.Extensions.Xml.xml
+C:\Users\dava\source\repos\practica-mad-mad01\UnitTest\obj\Debug\UnitTest.csproj.AssemblyReference.cache
+C:\Users\dava\source\repos\practica-mad-mad01\UnitTest\obj\Debug\UnitTest.csproj.CoreCompileInputs.cache
+C:\Users\dava\source\repos\practica-mad-mad01\UnitTest\obj\Debug\UnitTest.csproj.CopyComplete
+C:\Users\dava\source\repos\practica-mad-mad01\UnitTest\obj\Debug\UnitTest.dll
+C:\Users\dava\source\repos\practica-mad-mad01\UnitTest\obj\Debug\UnitTest.pdb
+C:\Users\dava\source\repos\Práctica final\practica-mad-mad01\UnitTest\bin\Debug\es\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.resources.dll
+C:\Users\dava\source\repos\Práctica final\practica-mad-mad01\UnitTest\bin\Debug\es\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.resources.dll
+C:\Users\dava\source\repos\Práctica final\practica-mad-mad01\UnitTest\bin\Debug\es\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+C:\Users\dava\source\repos\Práctica final\practica-mad-mad01\UnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\dava\source\repos\Práctica final\practica-mad-mad01\UnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\dava\source\repos\Práctica final\practica-mad-mad01\UnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\dava\source\repos\Práctica final\practica-mad-mad01\UnitTest\bin\Debug\UnitTest.dll.config
+C:\Users\dava\source\repos\Práctica final\practica-mad-mad01\UnitTest\bin\Debug\UnitTest.dll
+C:\Users\dava\source\repos\Práctica final\practica-mad-mad01\UnitTest\bin\Debug\UnitTest.pdb
+C:\Users\dava\source\repos\Práctica final\practica-mad-mad01\UnitTest\bin\Debug\Castle.Core.dll
+C:\Users\dava\source\repos\Práctica final\practica-mad-mad01\UnitTest\bin\Debug\EntityFramework.dll
+C:\Users\dava\source\repos\Práctica final\practica-mad-mad01\UnitTest\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\dava\source\repos\Práctica final\practica-mad-mad01\UnitTest\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+C:\Users\dava\source\repos\Práctica final\practica-mad-mad01\UnitTest\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Logging.dll
+C:\Users\dava\source\repos\Práctica final\practica-mad-mad01\UnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Users\dava\source\repos\Práctica final\practica-mad-mad01\UnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Users\dava\source\repos\Práctica final\practica-mad-mad01\UnitTest\bin\Debug\Model.dll
+C:\Users\dava\source\repos\Práctica final\practica-mad-mad01\UnitTest\bin\Debug\ModelUtil.dll
+C:\Users\dava\source\repos\Práctica final\practica-mad-mad01\UnitTest\bin\Debug\Ninject.dll
+C:\Users\dava\source\repos\Práctica final\practica-mad-mad01\UnitTest\bin\Debug\Ninject.Extensions.Interception.dll
+C:\Users\dava\source\repos\Práctica final\practica-mad-mad01\UnitTest\bin\Debug\Ninject.Extensions.Interception.DynamicProxy.dll
+C:\Users\dava\source\repos\Práctica final\practica-mad-mad01\UnitTest\bin\Debug\Ninject.Extensions.Xml.dll
+C:\Users\dava\source\repos\Práctica final\practica-mad-mad01\UnitTest\bin\Debug\Model.pdb
+C:\Users\dava\source\repos\Práctica final\practica-mad-mad01\UnitTest\bin\Debug\Model.dll.config
+C:\Users\dava\source\repos\Práctica final\practica-mad-mad01\UnitTest\bin\Debug\Castle.Core.xml
+C:\Users\dava\source\repos\Práctica final\practica-mad-mad01\UnitTest\bin\Debug\EntityFramework.xml
+C:\Users\dava\source\repos\Práctica final\practica-mad-mad01\UnitTest\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\dava\source\repos\Práctica final\practica-mad-mad01\UnitTest\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.xml
+C:\Users\dava\source\repos\Práctica final\practica-mad-mad01\UnitTest\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Logging.xml
+C:\Users\dava\source\repos\Práctica final\practica-mad-mad01\UnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Users\dava\source\repos\Práctica final\practica-mad-mad01\UnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Users\dava\source\repos\Práctica final\practica-mad-mad01\UnitTest\bin\Debug\Ninject.xml
+C:\Users\dava\source\repos\Práctica final\practica-mad-mad01\UnitTest\bin\Debug\Ninject.Extensions.Interception.xml
+C:\Users\dava\source\repos\Práctica final\practica-mad-mad01\UnitTest\bin\Debug\Ninject.Extensions.Interception.DynamicProxy.xml
+C:\Users\dava\source\repos\Práctica final\practica-mad-mad01\UnitTest\bin\Debug\Ninject.Extensions.Xml.xml
+C:\Users\dava\source\repos\Práctica final\practica-mad-mad01\UnitTest\obj\Debug\UnitTest.csproj.AssemblyReference.cache
+C:\Users\dava\source\repos\Práctica final\practica-mad-mad01\UnitTest\obj\Debug\UnitTest.csproj.CoreCompileInputs.cache
+C:\Users\dava\source\repos\Práctica final\practica-mad-mad01\UnitTest\obj\Debug\UnitTest.csproj.CopyComplete
+C:\Users\dava\source\repos\Práctica final\practica-mad-mad01\UnitTest\obj\Debug\UnitTest.dll
+C:\Users\dava\source\repos\Práctica final\practica-mad-mad01\UnitTest\obj\Debug\UnitTest.pdb

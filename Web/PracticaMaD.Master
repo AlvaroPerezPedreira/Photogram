@@ -1,0 +1,100 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="PracticaMaD.master.cs"
+    Inherits="Es.Udc.DotNet.PracticaMaD.Web.PracticaMaD" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head id="Head1" runat="server">
+    <title>Photogram</title>
+    <link href="~/Css/Styles.css" rel="stylesheet" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"/>
+
+</head>
+
+<body style="background-color: #808080">
+    <!-- Window. -->
+    <div id="window">
+
+        <!-- Page title. -->
+        <div id="pageTitle">
+            <asp:Localize ID="lclPageTitle" runat="server" meta:resourcekey="lclPageTitle" />
+        </div>
+
+        <!-- Menu. -->
+        <div id="menu">
+            <span id="menuWelcome">
+
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder_MenuWelcome" runat="server">
+                    <asp:Label ID="lblWelcome" runat="server" meta:resourcekey="lblWelcome" />
+                </asp:ContentPlaceHolder>
+            </span>
+
+            <span id="menuExplanation">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder_MenuExplanation" runat="server">
+                </asp:ContentPlaceHolder>
+            </span>
+
+            <span id="menuLinks">
+
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder_MenuLinks" runat="server">
+                    <!-- Link de autenticarse -->
+                    <asp:Label ID="lblDash1" runat="server" Text="-" />
+                    <asp:HyperLink ID="lnkAuthenticate" runat="server"
+                        NavigateUrl="~/Pages/Authentication.aspx"
+                        meta:resourcekey="lnkAuthenticate" />
+                    <!-- Link de home -->
+                    <asp:Label ID="lblDash5" runat="server" Text="-" />
+                    <asp:HyperLink ID="lnkHome" runat="server"
+                        NavigateUrl="~/Pages/Home.aspx"
+                        meta:resourcekey="lnkHome" />
+                    <!-- Link de crear imagen -->
+                    <asp:Label ID="lblDash4" runat="server" Text="-" />
+                    <asp:HyperLink ID="lnkCreateImage" runat="server"
+                        NavigateUrl="~/Pages/CreateImage.aspx"
+                        meta:resourcekey="lnkCreateImage" />
+                    <!-- Link de update profile -->
+                    <asp:Label ID="lblDash2" runat="server" Text="-" />
+                    <asp:HyperLink ID="lnkUpdate" runat="server"
+                        NavigateUrl="~/Pages/UpdateProfile.aspx"
+                        meta:resourcekey="lnkUpdate" />
+
+                    <!-- Link de seguidores -->
+                    <asp:Label ID="lblDash7" runat="server" Text="-" />
+                    <asp:HyperLink ID="lnkShowSeguidores" runat="server"
+                        meta:resourcekey="lnkShowSeguidores" />
+
+                    <!-- Link de seguidos -->
+                    <asp:Label ID="lblDash6" runat="server" Text="-" />
+                    <asp:HyperLink ID="lnkShowSeguidos" runat="server"
+                        NavigateUrl="~/Pages/ShowSeguidos.aspx"
+                        meta:resourcekey="lnkShowSeguidos" />
+
+
+
+
+                    <!-- Link de logout -->
+                    <asp:Label ID="lblDash3" runat="server" Text="-" />
+                    <asp:HyperLink ID="lnkLogout" runat="server"
+                        NavigateUrl="~/Pages/Logout.aspx"
+                        meta:resourcekey="lnkLogout" />
+
+                </asp:ContentPlaceHolder>
+            </span>
+        </div>
+
+        <!-- Body content. -->
+        <div id="content">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder_BodyContent" runat="server" />
+        </div>
+        <!-- Footer. -->
+        <div id="footer">
+            <asp:Localize ID="lclFooter" runat="server" meta:resourcekey="lclFooter" />
+        </div>
+        <!-- End of Window. -->
+    </div>
+    <!-- End of HTML body. -->
+</body>
+<!-- End of HTML. -->
+</html>

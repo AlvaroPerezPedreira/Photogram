@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="7303e6b34ba7418aabafeb0571745df6" Name="Diagram1" ZoomLevel="84">
+        <EntityTypeShape EntityType="Es.UDC.DotNet.PracticaMaD.ImageSet" Width="1.5" PointX="10.375" PointY="2.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Es.UDC.DotNet.PracticaMaD.UserProfile" Width="1.5" PointX="4.5" PointY="1.125" IsExpanded="true" />
+        <AssociationConnector Association="Es.UDC.DotNet.PracticaMaD.FK_ImagenUserProfile" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="Es.UDC.DotNet.PracticaMaD.Category" Width="1.5" PointX="14.125" PointY="6.125" />
+        <AssociationConnector Association="Es.UDC.DotNet.PracticaMaD.CategoríaImagenSet" />
+        <EntityTypeShape EntityType="Es.UDC.DotNet.PracticaMaD.Comment" Width="1.5" PointX="14.5" PointY="1.625" />
+        <AssociationConnector Association="Es.UDC.DotNet.PracticaMaD.ComentarioImagenSet" />
+        <AssociationConnector Association="Es.UDC.DotNet.PracticaMaD.ComentarioUserProfile" />
+        <AssociationConnector Association="Es.UDC.DotNet.PracticaMaD.UserProfileUserProfile" />
+        <EntityTypeShape EntityType="Es.UDC.DotNet.PracticaMaD.EXIF" Width="1.5" PointX="16.875" PointY="4" />
+        <AssociationConnector Association="Es.UDC.DotNet.PracticaMaD.EXIFImageSet" />
+        <EntityTypeShape EntityType="Es.UDC.DotNet.PracticaMaD.Tag" Width="1.5" PointX="2.5" PointY="4.75" />
+        <AssociationConnector Association="Es.UDC.DotNet.PracticaMaD.TagImageSet" />
+        <AssociationConnector Association="Es.UDC.DotNet.PracticaMaD.UserProfileImageSet" />
+        </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

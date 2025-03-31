@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="practicaMeDModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2012" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="practicaMeDModelStoreContainer">
+    <EntitySet Name="UserProfile" EntityType="practicaMeDModel.Store.UserProfile" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ImagenSet" EntityType="practicaMeDModel.Store.ImagenSet" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="ImagenUserProfile" Association="practicaMeDModel.Store.ImagenUserProfile">
+      <End Role="Imagen" EntitySet="ImagenSet" />
+      <End Role="UserProfile" EntitySet="UserProfile" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="UserProfile">
+    <Key>
+      <PropertyRef Name="usrId" />
+    </Key>
+    <Property Name="usrId" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="loginName" Type="varchar" Nullable="false" MaxLength="30" />
+    <Property Name="enPassword" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="firstName" Type="varchar" Nullable="false" MaxLength="30" />
+    <Property Name="lastName" Type="varchar" Nullable="false" MaxLength="40" />
+    <Property Name="email" Type="varchar" Nullable="false" MaxLength="60" />
+    <Property Name="language" Type="varchar" Nullable="false" MaxLength="2" />
+    <Property Name="country" Type="varchar" Nullable="false" MaxLength="2" />
+  </EntityType>
+  <EntityType Name="ImagenSet">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Titulo" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Descripcion" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="FechaDeSubida" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Apertura" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="TExposicion" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="ISO" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="WB" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Categoria" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="usrId" Type="bigint" Nullable="false" />
+  </EntityType>
+  <Association Name="ImagenUserProfile">
+    <End Role="Imagen" Type="practicaMeDModel.Store.ImagenSet" Multiplicity="*" />
+    <End Role="UserProfile" Type="practicaMeDModel.Store.UserProfile" Multiplicity="1" />
+    <ReferentialConstraint>
+      <Principal Role="UserProfile">
+        <PropertyRef Name="usrId" />
+      </Principal>
+      <Dependent Role="Imagen">
+        <PropertyRef Name="usrId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>
